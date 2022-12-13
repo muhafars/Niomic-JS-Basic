@@ -28,3 +28,7 @@ const setGrade = () => {
 };
 
 setGrade();
+let sortedTinggi = tinggi.sort((a, b) => a - b); //ascending
+console.log(sortedTinggi);
+sortedTinggi = tinggi.sort((a, b) => b - a); //descending
+console.log(sortedTinggi);
