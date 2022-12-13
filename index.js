@@ -1,19 +1,20 @@
 /**
  ** Tugas 1
 *? 1. Pastikan Teman Teman Sudah Menginstall Node JS
-*? 2. Teman - Teman Buatlah File di Folder javascript teman teman sebuah file dengan nama file tugas1.js
+*? 2. Teman - Teman Buatlah File di Folder javascript teman teman sebuah file dengan nama file tugas3.js
 *? 3. Buatlah Program Dengan Spesifikasi dibawah ini :
 *ToDo
-- Buatlah 5 buah variabel dengan 5 tipe data yang berbeda number , string , boolean , null atau undifined dan array
-- Didalam variabel tersebut teman teman isikan nilai yang berbeda tiap variabelnya
--Setelah itu teman teman tampilkan kelima variabel tersebut dengan console.log()
+- Buatlah sebuah function yang mempunyai nilai balik atau return dan sebuah parameter / argument
+- Setelah itu teman teman kirimlah sebuah nilai kedalam function tersebut
+- Didalam function tersebut teman teman ubah nilai dari variabel yang dikirim lalu kembalikan dengan return
+- Setelah nilai dikembalikan , tampilkan kedua nilai tersebut sebelum dirubah didalam function dan sesudah
 *? 4. Happy Codding :)
  */
 
-let number = 1;
-let string = "string";
-let boolean = true;
-let nullVar = null;
-let undifined;
+const foo = (num) => {
+  console.log(num); //cetak sebelum diubah
+  num += 1;
+  return console.log(num); //cetak sesudah
+};
 
-console.log(number, string, boolean, nullVar, undifined);
+foo(20);
