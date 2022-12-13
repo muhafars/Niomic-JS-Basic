@@ -6,7 +6,7 @@
 *ToDo 
 - Buatlah sebuah perulangan dengan kondisi <=20 atau sebanyak 20 kali
 *Todo
-- Setelah itu teman teman tampilkan nilai kelipatan 3 pada perulangan tersebut
+- Setelah itu teman teman buatlah sebuah kondisi pada perulangan jika dia bilangan genap dia akan menampilkan text bilangan genap bukan angkanya, tetapi kalau yang tampil bilangan ganjil , biarkan angka nya yang ditampilkan.
 *ToDo
 - Tampilkan hasilnya dengan console.log()
 
@@ -14,10 +14,11 @@
  */
 let result;
 for (i = 0; i <= 20; i++) {
+  if (i % 2 === 0 && i > 0) {
+    console.log("genap");
+  }
   if (i % 3 === 0 && i > 0) {
     result = i;
     console.log(result);
   }
 }
-
-console.log(`ini dari luar ${result}`); //mengambil output terakhir
